@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    tools:context=".VietnamnetCategory">
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Congnghe"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_marginLeft="10dp"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Công nghệ"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Kinhdoanh"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_toRightOf="@id/btn_Vietnamnet_Congnghe"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Kinh doanh"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_Vietnamnet_Giaitri"
+        android:layout_below="@id/btn_Vietnamnet_Congnghe"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Giải trí"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_Vietnamnet_Suckhoe"
+        android:layout_below="@id/btn_Vietnamnet_Kinhdoanh"
+        android:layout_toRightOf="@+id/btn_Vietnamnet_Giaitri"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Sức khỏe"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Thethao"
+        android:layout_below="@id/btn_Vietnamnet_Giaitri"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Thể thao"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Batdongsan"
+        android:layout_below="@id/btn_Vietnamnet_Suckhoe"
+        android:layout_toRightOf="@id/btn_Vietnamnet_Thethao"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Bất động sản"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Tinmoinong"
+        android:layout_below="@id/btn_Vietnamnet_Thethao"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Tin mới nóng"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Tinnoibat"
+        android:layout_below="@id/btn_Vietnamnet_Batdongsan"
+        android:layout_toRightOf="@+id/btn_Vietnamnet_Tinmoinong"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_solid_vietnamnet"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Tin nổi bật"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_Vietnamnet_Back"
+        android:textAllCaps="false"
+        android:layout_below="@id/btn_Vietnamnet_Tinmoinong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_gradient_background"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

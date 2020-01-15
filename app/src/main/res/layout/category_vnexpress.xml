@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".VNExpressCategory">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#009688"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:weightSum="6">
+
+            <SearchView
+
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btnRefresh"
+                android:layout_weight="6"
+                android:background="@drawable/button_solid_background"
+                android:hint="Tìm kiếm"
+                android:paddingLeft="10dp"></SearchView>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/btnRefresh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/btnOldNews"
+                android:scaleType="fitXY"
+                android:src="@drawable/refresh" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/toobar"
+        android:textColor="#000000"
+        app:pstsDividerColor="@color/green"
+        app:pstsIndicatorColor="@color/red"
+        app:pstsUnderlineColor="@color/blue" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:background="#FDFBFB"></androidx.viewpager.widget.ViewPager>
+</RelativeLayout>
